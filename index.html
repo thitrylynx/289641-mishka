@@ -8,7 +8,7 @@
     <!-- Блок шапка -->
     <header class="page-header">
       <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
-      <a class="page-header__logo">
+      <a class="logo">
         <img src="http://placehold.it/80x20" width="80" height="20" alt="Интернет-магазин «Mishka»">
       </a>
       <nav class="main-nav main-nav--open">
@@ -28,14 +28,10 @@
       </header>
       <ul class="main-content__list">
         <li class="main-content__list-item">
-          <a class="main-content__list-link" href="#">Предметы интерьера
-            <span class="main-content__item-good"></span>
-          </a>
+          <a class="main-content__list-link" href="#">Предметы интерьера</a>
         </li>
         <li class="main-content__list-item main-content__list-item--dark">
-          <a class="main-content__list-link" href="#">Детские игрушки
-            <span class="main-content__item-toy"></span>
-          </a>
+          <a class="main-content__list-link" href="#">Детские игрушки</a>
         </li>
       </ul>
     </section>
@@ -45,20 +41,20 @@
         <h2 class="promo-block__title">Вязанные корзинки</h2>
         <span class="promo-block__subtitle">Товар недели</span>
         <p class="promo-block__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех разверах.</p>
-        <ul class="promo-block__features">
-          <li class="promo-block__feature">
-            <span class="promo-block__benefit">Цвет:</span>
-            <span class="promo-block__value">«Тиффани»/серый</span>
-          </li>
-          <li class="promo-block__feature">
-            <span class="promo-block__benefit">Диаметр</span>
-            <span class="promo-block__value">25 см</span>
-          </li>
-          <li class="promo-block__feature">
-            <span class="promo-block__benefit">Высота:</span>
-            <span class="promo-block__value">15 см</span>
-          </li>
-        </ul>
+        <table class="promo-block__features">
+          <tr class="promo-block__feature">
+            <td class="promo-block__benefit">Цвет:</td>
+            <td class="promo-block__value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="promo-block__feature">
+            <td class="promo-block__benefit">Диаметр</td>
+            <td class="promo-block__value">25 см</td>
+          </tr>
+          <tr class="promo-block__feature">
+            <td class="promo-block__benefit">Высота:</td>
+            <td class="promo-block__value">15 см</td>
+          </tr>
+        </table>
         <img class="promo-block__logo" src="http://placehold.it/200x300" width="200" height="300" alt="Изображение вязаных корзинок">
         <span class="promo-block__price">Цена: 990 руб.</span>
         <a class="promo-block__btn btn" href="#">Заказать</a>
@@ -66,17 +62,15 @@
     </section>
     <!-- Блок о компании -->
     <section class="about">
-      <div class="about__wrapper">
-        <h2 class="about__title">Коротко о нас:</h2>
-        <ul class="about__advantages">
-          <li class="about__advantage about__advantage--flower">Экологически чистые материалы</li>
-          <li class="about__advantage about__advantage--money">Скандинавский стиль по российской цене</li>
-          <li class="about__advantage about__advantage--heart">Увеличивет лайки на фотографиях</li>
-          <li class="about__advantage about__advantage--circle">Связано вручную с любовью и умилением</li>
-          <li class="about__advantage about__advantage--rocket">Поддержка отечественного производителя</li>
-          <li class="about__advantage about__advantage--present">Поставляется в подарочной упаковке</li>
-        </ul>
-      </div>
+      <h2 class="about__title">Коротко о нас:</h2>
+      <ul class="about__advantages">
+        <li class="about__advantage about__advantage--flower">Экологически чистые материалы</li>
+        <li class="about__advantage about__advantage--money">Скандинавский стиль по российской цене</li>
+        <li class="about__advantage about__advantage--heart">Увеличивет лайки на фотографиях</li>
+        <li class="about__advantage about__advantage--circle">Связано вручную с любовью и умилением</li>
+        <li class="about__advantage about__advantage--rocket">Поддержка отечественного производителя</li>
+        <li class="about__advantage about__advantage--present">Поставляется в подарочной упаковке</li>
+      </ul>
     </section>
     <!-- Блок отзывы -->
     <section class="reviews">
@@ -98,15 +92,13 @@
     </section>
     <!-- Блок контакты -->
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <h2 class="page-footer__title">Контакты</h2>
-        <p class="page-footer__mail">e-mail:
-          <a class="page-footer__mail-value">info@mimimishkashop.ru</a>
-        </p>
-        <p class="page-footer__adress">адрес:
-          <span class="page-footer__adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-        </p>
-      </div>
+      <h2 class="page-footer__title">Контакты</h2>
+      <p class="page-footer__mail">e-mail:
+        <a class="page-footer__mail-value">info@mimimishkashop.ru</a>
+      </p>
+      <p class="page-footer__adress">адрес:
+        <span class="page-footer__adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+      </p>
       <div class="page-footer__map-block">
         <img class="page-footer__map" src="http://placehold.it/200x300" width="200" height="300" alt="Карта - Город Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
       </div>
@@ -123,18 +115,22 @@
         <a class="page-footer__copyright-link" href="#">Разработано<img class="page-footer__copyright-link--logo" src="http://placehold.it/50x20" width="50" height="20" alt="Логотип «HTML-Academy»"></a>
       </div>
     </footer>
-    <section class="modal-content">
-      <div class="modal-content__wrapper">
-        <h2 class="modal-content__title">Добавить в корзину</h2>
-        <p class="modal-content__subtitle">Выберите размер:</p>
-        <div class="modal-content__items">
-          <span class="modal-content__item">S</span>
-          <span class="modal-content__item">M</span>
-          <span class="modal-content__item">L</span>
-        </div>
-        <button class="modal-content__btn btn" type="submit">Добавить</button>
-      </div>
-    </section>
+    <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="modal-content__title">Добавить в корзину</h2>
+      <fieldset class="form-size">
+        <legend class="form-size">Выберите размер:</legend>
+        <label class="form-size__feature">
+          <input class="form-size__feature-value" type="radio" name="size" value="S" checked/>S
+        </label>
+        <label class="form-size__feature">
+          <input class="form-size__feature-value" type="radio" name="size" value="M"/>M
+        </label>
+        <label class="form-size__feature">
+          <input class="form-size__feature-value" type="radio" name="size" value="L"/>L
+        </label>
+      </fieldset>
+      <button class="modal-content__btn btn" type="submit">Добавить</button>
+    </form>
     <div class="modal-overlay"></div>
   </body>
 </html>

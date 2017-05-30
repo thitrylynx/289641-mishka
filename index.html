@@ -2,11 +2,135 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Интернет магазин "Mishka"</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <!-- Блок шапка -->
+    <header class="page-header">
+      <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
+      <a class="logo">
+        <img src="http://placehold.it/80x20" width="80" height="20" alt="Интернет-магазин «Mishka»">
+      </a>
+      <nav class="main-nav main-nav--open">
+        <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Взание на заказ</a></li>
+            <li class="main-nav__item main__item--lens-icon"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li><!-- [?] можно реализовать иконку через псевдоэлемент? -->
+          </ul>
+      </nav>
+    </header>
+    <!-- Блок виды товаров -->
+    <section class="main-content">
+      <header class="main-content__header">
+        <h1 class="main-content__title">Милые штуки ручной работы для дома</h1>
+      </header>
+      <ul class="main-content__list">
+        <li class="main-content__list-item">
+          <a class="main-content__list-link" href="#">Предметы интерьера</a>
+        </li>
+        <li class="main-content__list-item main-content__list-item--dark">
+          <a class="main-content__list-link" href="#">Детские игрушки</a>
+        </li>
+      </ul>
+    </section>
+    <!-- Блок товар недели -->
+    <section class="promo-block">
+      <div class="promo-block__wrapper">
+        <h1 class="promo-block__title">Вязанные корзинки</h1>
+        <span class="promo-block__subtitle">Товар недели</span>
+        <p class="promo-block__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех разверах.</p>
+        <table class="promo-block__features">
+          <tr class="promo-block__feature">
+            <td class="promo-block__benefit">Цвет:</td>
+            <td class="promo-block__value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="promo-block__feature">
+            <td class="promo-block__benefit">Диаметр</td>
+            <td class="promo-block__value">25 см</td>
+          </tr>
+          <tr class="promo-block__feature">
+            <td class="promo-block__benefit">Высота:</td>
+            <td class="promo-block__value">15 см</td>
+          </tr>
+        </table>
+        <img class="promo-block__logo" src="http://placehold.it/200x300" width="200" height="300" alt="Изображение вязаных корзинок">
+        <span class="promo-block__price">Цена: 990 руб.</span>
+        <a class="promo-block__btn btn" href="#">Заказать</a>
+      </div>
+    </section>
+    <!-- Блок о компании -->
+    <section class="about">
+      <h1 class="about__title">Коротко о нас:</h1>
+      <ul class="about__advantages">
+        <li class="about__advantage about__advantage--flower">Экологически чистые материалы</li>
+        <li class="about__advantage about__advantage--money">Скандинавский стиль по российской цене</li>
+        <li class="about__advantage about__advantage--heart">Увеличивет лайки на фотографиях</li>
+        <li class="about__advantage about__advantage--circle">Связано вручную с любовью и умилением</li>
+        <li class="about__advantage about__advantage--rocket">Поддержка отечественного производителя</li>
+        <li class="about__advantage about__advantage--present">Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+    <!-- Блок отзывы -->
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h1 class="reviews__title">Отзывы</h1>
+          <div class="reviews__slider">
+            <div class="reviews__inner">
+              <blockquote class="reviews__item">
+                <p class="reviews__item-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__author-name">Анастасия Красильникова</cite>
+                <span class="reviews__author-inst">@misssssiskras</span>
+              </blockquote>
+            </div>
+        </div>
+        <button class="reviews__btn-left arrow-block" type="button"></button>
+        <button class="reviews__btn-right arrow-block" type="button"></button>
+        <a class="reviews__link btn" href="#">Написать</a>
+      </div>
+    </section>
+    <!-- Блок контакты -->
+    <footer class="page-footer">
+      <h1 class="page-footer__title">Контакты</h1>
+      <p class="page-footer__mail">e-mail:
+        <a class="page-footer__mail-value">info@mimimishkashop.ru</a>
+      </p>
+      <p class="page-footer__adress">адрес:
+        <span class="page-footer__adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+      </p>
+      <div class="page-footer__map-block">
+        <img class="page-footer__map" src="http://placehold.it/200x300" width="200" height="300" alt="Карта - Город Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
+      </div>
+      <a class="page-footer__btn btn" href="#">Напишите нам</a>
+      <div class="page-footer__social">
+        <!-- Блок социальные кнопки -->
+        <div class="socials-links">
+          <a class="socials-link socials-link--inst" href="#">Мы в инстаграмме</a>
+          <a class="socials-link socials-link--fb" href="#">Мы в фейсбуке</a>
+          <a class="socials-link socials-link--twet" href="#">Мы в твиттере</a>
+        </div>
+      </div>
+      <div class="page-foter__copyrights">
+        <a class="page-footer__copyright-link" href="#">Разработано<img class="page-footer__copyright-link--logo" src="http://placehold.it/50x20" width="50" height="20" alt="Логотип «HTML-Academy»"></a>
+      </div>
+    </footer>
+    <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
+      <h1 class="modal-content__title">Добавить в корзину</h1>
+      <fieldset class="form-size">
+        <legend class="form-size">Выберите размер:</legend>
+        <label class="form-size__feature">
+          <input class="form-size__feature-value" type="radio" name="size" value="S" checked/>S
+        </label>
+        <label class="form-size__feature">
+          <input class="form-size__feature-value" type="radio" name="size" value="M"/>M
+        </label>
+        <label class="form-size__feature">
+          <input class="form-size__feature-value" type="radio" name="size" value="L"/>L
+        </label>
+      </fieldset>
+      <button class="modal-content__btn btn" type="submit">Добавить</button>
+    </form>
+    <div class="modal-overlay"></div>
   </body>
 </html>

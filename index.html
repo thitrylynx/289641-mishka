@@ -3,35 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет магазин "Mishka"</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!-- Блок шапка -->
     <header class="page-header">
       <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
       <a class="logo">
-        <img src="http://placehold.it/80x20" width="80" height="20" alt="Интернет-магазин «Mishka»">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
       </a>
-      <nav class="main-nav main-nav--open">
+      <nav class="main-nav">
         <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--open">
             <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Взание на заказ</a></li>
             <li class="main-nav__item main__item--lens-icon"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li><!-- [?] можно реализовать иконку через псевдоэлемент? -->
+            <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li>
           </ul>
       </nav>
     </header>
     <!-- Блок виды товаров -->
     <section class="main-content">
       <header class="main-content__header">
+        <div class="main-content__img-wrap">
+          <img src="img/hero-mobile@1x.jpg" width="575" height="373" alt="Милые штуки ручной работы для дома">
+        </div>
         <h1 class="main-content__title">Милые штуки ручной работы для дома</h1>
       </header>
       <ul class="main-content__list">
         <li class="main-content__list-item">
-          <a class="main-content__list-link" href="#">Предметы интерьера</a>
+          <a class="main-content__list-link main-content__list-item--light" href="#">Предметы<br> интерьера</a>
         </li>
         <li class="main-content__list-item main-content__list-item--dark">
-          <a class="main-content__list-link" href="#">Детские игрушки</a>
+          <a class="main-content__list-link" href="#">Детские<br> игрушки</a>
         </li>
       </ul>
     </section>
@@ -47,7 +52,7 @@
             <td class="promo-block__value">«Тиффани»/серый</td>
           </tr>
           <tr class="promo-block__feature">
-            <td class="promo-block__benefit">Диаметр</td>
+            <td class="promo-block__benefit">Диаметр:</td>
             <td class="promo-block__value">25 см</td>
           </tr>
           <tr class="promo-block__feature">
@@ -55,8 +60,8 @@
             <td class="promo-block__value">15 см</td>
           </tr>
         </table>
-        <img class="promo-block__logo" src="http://placehold.it/200x300" width="200" height="300" alt="Изображение вязаных корзинок">
-        <span class="promo-block__price">Цена: 990 руб.</span>
+        <img class="promo-block__logo" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение вязаных корзинок">
+        <div class="promo-block__price">Цена: 990 руб.</div>
         <a class="promo-block__btn btn" href="#">Заказать</a>
       </div>
     </section>
@@ -64,12 +69,12 @@
     <section class="about">
       <h1 class="about__title">Коротко о нас:</h1>
       <ul class="about__advantages">
-        <li class="about__advantage about__advantage--flower">Экологически чистые материалы</li>
-        <li class="about__advantage about__advantage--money">Скандинавский стиль по российской цене</li>
-        <li class="about__advantage about__advantage--heart">Увеличивет лайки на фотографиях</li>
-        <li class="about__advantage about__advantage--circle">Связано вручную с любовью и умилением</li>
-        <li class="about__advantage about__advantage--rocket">Поддержка отечественного производителя</li>
-        <li class="about__advantage about__advantage--present">Поставляется в подарочной упаковке</li>
+        <li class="about__advantage about__advantage--flower">Экологически<br> чистые материалы</li>
+        <li class="about__advantage about__advantage--money">Скандинавский стиль<br> по российской цене</li>
+        <li class="about__advantage about__advantage--heart">Увеличивет лайки<br> на фотографиях</li>
+        <li class="about__advantage about__advantage--circle">Связано вручную с<br> любовью и умилением</li>
+        <li class="about__advantage about__advantage--rocket">Поддержка отечественного<br> производителя</li>
+        <li class="about__advantage about__advantage--present">Поставляется в<br> подарочной упаковке</li>
       </ul>
     </section>
     <!-- Блок отзывы -->
@@ -81,12 +86,14 @@
               <blockquote class="reviews__item">
                 <p class="reviews__item-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
                 <cite class="reviews__author-name">Анастасия Красильникова</cite>
-                <span class="reviews__author-inst">@misssssiskras</span>
+                <div class="reviews__author-inst">@misssssiskras</div>
               </blockquote>
             </div>
         </div>
-        <button class="reviews__btn-left arrow-block" type="button"></button>
-        <button class="reviews__btn-right arrow-block" type="button"></button>
+        <div class="arrow">
+          <button class="reviews__btn-left arrow__block" type="button"></button>
+          <button class="reviews__btn-right arrow__block" type="button"></button>
+        </div>
         <a class="reviews__link btn" href="#">Написать</a>
       </div>
     </section>
@@ -94,13 +101,13 @@
     <footer class="page-footer">
       <h1 class="page-footer__title">Контакты</h1>
       <p class="page-footer__mail">e-mail:
-        <a class="page-footer__mail-value">info@mimimishkashop.ru</a>
+        <a class="page-footer__mail-value" href="#">info@mimimishkashop.ru</a>
       </p>
       <p class="page-footer__adress">адрес:
         <span class="page-footer__adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
       </p>
       <div class="page-footer__map-block">
-        <img class="page-footer__map" src="http://placehold.it/200x300" width="200" height="300" alt="Карта - Город Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
+        <img class="page-footer__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта - Город Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
       </div>
       <a class="page-footer__btn btn" href="#">Напишите нам</a>
       <div class="page-footer__social">

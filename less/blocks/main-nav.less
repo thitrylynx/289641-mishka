@@ -1,17 +1,13 @@
-.btext() {
-  font-family: @bfont;
-  font-size: 17px;
-}
-.align() {
-  text-align: center;
-}
 .main-nav {
   .width;
 }
-.main-nav__list {
-  display: none;
+.main-nav__wrapper {
   width: 320px;
   .margins;
+}
+.main-nav__list {
+  display: non;
+  .zero;
   list-style: none;
 }
 .main-nav__list--open {
@@ -21,6 +17,7 @@
   width: 20px;
   height: 15px;
   background: url(../img/icon-menu-open.svg) no-repeat;
+  cursor: pointer;
 }
 .main-nav__toggler--close {
 }
@@ -31,14 +28,13 @@
 .main-nav__link {
   display: block;
   .paddings-height;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 80px;
   .type-link;
 }
 .main__item--lens-icon::before {
   content: " ";
   position: absolute;
-  margin-top: 33px;
+  margin-top: 30px;
   margin-left: 30px;
   width: 18px;
   height: 18px;
@@ -49,7 +45,7 @@
 .main-nav__item--cart-icon::before {
   content: " ";
   position: absolute;
-  margin-top: 33px;
+  margin-top: 30px;
   margin-left: 30px;
   width: 20px;
   height: 22px;

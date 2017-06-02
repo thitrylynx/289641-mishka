@@ -8,19 +8,23 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
-      <a class="logo" href="index.html">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
-      </a>
-      <nav class="main-nav main-nav--open">
-        <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Взание на заказ</a></li>
-            <li class="main-nav__item main__item--lens-icon"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li>
-          </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
+        <a class="logo" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
+            <ul class="main-nav__list main-nav__list--open">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Взание на заказ</a></li>
+              <li class="main-nav__item main__item--lens-icon"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- Блок форма -->
     <section class="page-form">
@@ -48,7 +52,7 @@
               <input class="form-color__feature-value" type="checkbox" name="color" value="white" checked>Белый
             </label>
             <label class="form-color__feature">
-              <input class="form-color__value" type="checkbox" name="color" value="gray" checked>Серый
+              <input class="form-color__feature-value" type="checkbox" name="color" value="gray" checked>Серый
             </label>
             <label class="form-color__feature">
               <input class="form-color__feature-value"  type="checkbox" name="color" value="tiffany">«Тиффани»
@@ -90,17 +94,20 @@
         </form>
       </div>
     </section>
+    <!-- Блок контакты -->
     <footer class="page-footer">
-      <div class="page-footer__social">
-        <!-- Блок социальные кнопки -->
-        <div class="socials-links">
+      <!-- Блок социальные кнопки -->
+      <div class="socials-links">
+        <div class="socials-links__wrapper">
           <a class="socials-link socials-link--inst" href="#">Мы в инстаграмме</a>
           <a class="socials-link socials-link--fb" href="#">Мы в фейсбуке</a>
           <a class="socials-link socials-link--twet" href="#">Мы в твиттере</a>
         </div>
       </div>
-      <div class="page-foter__copyrights">
-        <a class="page-footer__copyright-link" href="#">Разработано<img class="page-footer__copyright-logo" src="img/htmlacademy.svg" width="35" height="35" alt="Логотип «HTML-Academy»"></a>
+      <div class="copyrights">
+        <div class="copyrights--wrapper">
+          <a class="copyright-link" href="#">Разработано<img class="copyright-logo" src="img/htmlacademy.svg" width="35" height="35" alt="Логотип «HTML-Academy»"></a>
+        </div>
       </div>
     </footer>
   </body>

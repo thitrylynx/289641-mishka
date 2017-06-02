@@ -9,34 +9,41 @@
   <body>
     <!-- Блок шапка -->
     <header class="page-header">
-      <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
-      <a class="logo">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
-      </a>
-      <nav class="main-nav">
-        <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
-          <ul class="main-nav__list main-nav__list--open">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Взание на заказ</a></li>
-            <li class="main-nav__item main__item--lens-icon"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li>
-          </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
+        <a class="logo">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
+            <ul class="main-nav__list main-nav__list--open">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Взание на заказ</a></li>
+              <li class="main-nav__item main__item--lens-icon"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- Блок виды товаров -->
     <section class="main-content">
-      <header class="main-content__header">
-        <div class="main-content__img-wrap">
-          <img src="img/hero-mobile@1x.jpg" width="575" height="373" alt="Милые штуки ручной работы для дома">
-        </div>
-        <h1 class="main-content__title">Милые штуки ручной работы для дома</h1>
-      </header>
+      <div class="main-content__wrap">
+        <header class="main-content__header">
+          <h1 class="main-content__title">Милые штуки ручной работы для дома</h1>
+        </header>
+      </div>
       <ul class="main-content__list">
         <li class="main-content__list-item">
-          <a class="main-content__list-link main-content__list-item--light" href="#">Предметы<br> интерьера</a>
+          <div class="main-content__list-wrapper">
+            <a class="main-content__list-link main-content__list-item--light" href="#">Предметы<br> интерьера</a>
+          </div>
         </li>
-        <li class="main-content__list-item main-content__list-item--dark">
-          <a class="main-content__list-link" href="#">Детские<br> игрушки</a>
+        <li class="main-content__list-item">
+          <div class="main-content__list-wrapper">
+            <a class="main-content__list-link main-content__list-item--dark" href="#">Детские<br> игрушки</a>
+          </div>
         </li>
       </ul>
     </section>
@@ -67,15 +74,17 @@
     </section>
     <!-- Блок о компании -->
     <section class="about">
-      <h1 class="about__title">Коротко о нас:</h1>
-      <ul class="about__advantages">
-        <li class="about__advantage about__advantage--flower">Экологически<br> чистые материалы</li>
-        <li class="about__advantage about__advantage--money">Скандинавский стиль<br> по российской цене</li>
-        <li class="about__advantage about__advantage--heart">Увеличивет лайки<br> на фотографиях</li>
-        <li class="about__advantage about__advantage--circle">Связано вручную с<br> любовью и умилением</li>
-        <li class="about__advantage about__advantage--rocket">Поддержка отечественного<br> производителя</li>
-        <li class="about__advantage about__advantage--present">Поставляется в<br> подарочной упаковке</li>
-      </ul>
+      <div class="about__wrapper">
+        <h1 class="about__title">Коротко о нас:</h1>
+        <ul class="about__advantages">
+          <li class="about__advantage about__advantage--flower">Экологически<br> чистые материалы</li>
+          <li class="about__advantage about__advantage--money">Скандинавский стиль<br> по российской цене</li>
+          <li class="about__advantage about__advantage--heart">Увеличивет лайки<br> на фотографиях</li>
+          <li class="about__advantage about__advantage--circle">Связано вручную с<br> любовью и умилением</li>
+          <li class="about__advantage about__advantage--rocket">Поддержка отечественного<br> производителя</li>
+          <li class="about__advantage about__advantage--present">Поставляется в<br> подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
     <!-- Блок отзывы -->
     <section class="reviews">
@@ -99,27 +108,31 @@
     </section>
     <!-- Блок контакты -->
     <footer class="page-footer">
-      <h1 class="page-footer__title">Контакты</h1>
-      <p class="page-footer__mail">e-mail:
-        <a class="page-footer__mail-value" href="#">info@mimimishkashop.ru</a>
-      </p>
-      <p class="page-footer__adress">адрес:
-        <span class="page-footer__adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-      </p>
-      <div class="page-footer__map-block">
-        <img class="page-footer__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта - Город Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
+      <div class="page-footer__wrapper">
+        <h1 class="page-footer__title">Контакты</h1>
+        <p class="page-footer__mail">e-mail:
+          <a class="page-footer__mail-value" href="#">info@mimimishkashop.ru</a>
+        </p>
+        <p class="page-footer__adress">адрес:
+          <span class="page-footer__adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+        </p>
+        <div class="page-footer__map-block">
+          <img class="page-footer__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта - Город Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
+        </div>
+        <a class="page-footer__btn btn" href="#">Напишите нам</a>
       </div>
-      <a class="page-footer__btn btn" href="#">Напишите нам</a>
-      <div class="page-footer__social">
-        <!-- Блок социальные кнопки -->
-        <div class="socials-links">
+      <!-- Блок социальные кнопки -->
+      <div class="socials-links">
+        <div class="socials-links__wrapper">
           <a class="socials-link socials-link--inst" href="#">Мы в инстаграмме</a>
           <a class="socials-link socials-link--fb" href="#">Мы в фейсбуке</a>
           <a class="socials-link socials-link--twet" href="#">Мы в твиттере</a>
         </div>
       </div>
-      <div class="page-foter__copyrights">
-        <a class="page-footer__copyright-link" href="#">Разработано<img class="page-footer__copyright-logo" src="img/htmlacademy.svg" width="35" height="35" alt="Логотип «HTML-Academy»"></a>
+      <div class="copyrights">
+        <div class="copyrights--wrapper">
+          <a class="copyright-link" href="#">Разработано<img class="copyright-logo" src="img/htmlacademy.svg" width="35" height="35" alt="Логотип «HTML-Academy»"></a>
+        </div>
       </div>
     </footer>
     <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">

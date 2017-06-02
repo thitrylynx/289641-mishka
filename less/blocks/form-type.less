@@ -1,0 +1,37 @@
+.form-type {
+  .zero;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: none;
+  border-top: 1px solid @primary-color;
+}
+.form-type__title {
+  .zero;
+  padding-right: 25px;
+  font-family: @bfont;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: @primary-color;
+}
+.form-type__feature {
+  display: block;
+  margin-left: 60px;
+  padding-top: 30px;
+  font-family: @bfont;
+  font-size: 17px;
+  cursor: pointer;
+}
+.form-type__feature-value {
+  display: none;
+}
+.form-type__feature::before {
+  content: " ";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: -55px;
+  border: 2px solid #444444;
+  border-radius: 50px;
+  cursor: pointer;
+}

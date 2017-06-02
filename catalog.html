@@ -3,22 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет магазин "Mishka"</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
-      <a class="logo" href="index.html">
-        <img src="http://placehold.it/80x20" width="80" height="20" alt="Интернет-магазин «Mishka»">
-      </a>
-      <nav class="main-nav main-nav--open">
-        <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Взание на заказ</a></li>
-            <li class="main-nav__item main__item--lens-icon"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li>
-          </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
+        <a class="logo" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
+            <ul class="main-nav__list main-nav__list--open">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Взание на заказ</a></li>
+              <li class="main-nav__item main__item--lens-icon"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- Блок каталог товаров -->
     <section class="catalog-page">
@@ -26,39 +32,40 @@
         <h1 class="catalog-page__title">Каталог товаров</h1>
       </header>
       <div class="catalog-page__wrapper">
+        <!-- Блок товара -->
         <article class="catlog-item">
-          <img class="catlog-item__img" src="http://placehold.it/150x80" width="150" height="80" alt="Изображение игрушки «зайчик-попрыгайчик»">
+          <img class="catlog-item__img" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Изображение игрушки «зайчик-попрыгайчик»">
           <div class="catlog-item__descr-block">
             <h1 class="catlog-item__title"><a class="catlog-item__link" href="#">Зайчик-попрыгайчик</a></h1>
             <span class="catlog-item__descr">Рост 30 см, вес 200 г</span>
-            <span class="catlog-item__price">1 200 руб.<a class="catlog-item__cart-pic" href="#"></a></span>
+            <span class="catlog-item__price">1 200 руб.<a class="catlog-item__cart-pic" href="#">Купить</a></span>
           </div>
         </article>
         <!-- Блок товара -->
         <article class="catlog-item">
-          <img class="catlog-item__img" src="http://placehold.it/150x80" width="150" height="80" alt="Изображение «Корзинка для белья»">
+          <img class="catlog-item__img" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Изображение «Корзинка для белья»">
           <div class="catlog-item__descr-block">
             <h1 class="catlog-item__title"><a class="catlog-item__link" href="#">Корзинка для белья</a></h1>
             <span class="catlog-item__descr">Диаметр 15 см, высота 10 см</span>
-            <span class="catlog-item__price">690 руб.<a class="catlog-item__cart-pic" href="#"></a></span>
+            <span class="catlog-item__price"> 690 руб. <a class="catlog-item__cart-pic" href="#">Купить</a></span>
           </div>
         </article>
         <!-- Блок товара -->
         <article class="catlog-item">
-          <img class="catlog-item__img" src="http://placehold.it/150x80" width="150" height="80" alt="Изображение «Большая корзинка для игрушек»">
+          <img class="catlog-item__img" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Изображение «Большая корзинка для игрушек»">
           <div class="catlog-item__descr-block">
             <h1 class="catlog-item__title"><a class="catlog-item__link" href="#">Большая корзинка для игрушек</a></h1>
             <span class="catlog-item__descr">Диаметр 30 см, высота 30 см</span>
-            <span class="catlog-item__price">1 500 руб.<a class="catlog-item__cart-pic" href="#"></a></span>
+            <span class="catlog-item__price">1 500 руб.<a class="catlog-item__cart-pic" href="#">Купить</a></span>
           </div>
         </article>
         <!-- Блок описание производства -->
-        <article class="production-descr">
+        <article class="production-descr catlog-item ">
           <div class="production-descr__header">
             <h1 class="production-descr__title production-descr__title--pic">Процесс производства</h1>
           </div>
           <!-- Блок видео -->
-          <img class="production-video production-video--icon" src="http://placehold.it/150x50" width="150" height="50" alt="Видео процесса производства">
+          <img class="production-descr__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео процесса производства"><a class="production-descr__video--icon" href="#"></a>
           <div class="production-descr__inner">
             <p class="production-descr__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="production-descr__btn btn">Сделать заказ</a>
@@ -68,16 +75,18 @@
     </section>
     <!-- Блок контакты -->
     <footer class="page-footer">
-      <div class="page-footer__social">
-        <!-- Блок социальные кнопки -->
-        <div class="socials-links">
+      <!-- Блок социальные кнопки -->
+      <div class="socials-links">
+        <div class="socials-links__wrapper">
           <a class="socials-link socials-link--inst" href="#">Мы в инстаграмме</a>
           <a class="socials-link socials-link--fb" href="#">Мы в фейсбуке</a>
           <a class="socials-link socials-link--twet" href="#">Мы в твиттере</a>
         </div>
       </div>
-      <div class="page-foter__copyrights">
-        <a class="page-footer__copyright-link" href="#">Разработано<img class="page-footer__copyright-link--logo" src="http://placehold.it/50x20" width="50" height="20" alt="Логотип «HTML-Academy»"></a>
+      <div class="copyrights">
+        <div class="copyrights--wrapper">
+          <a class="copyright-link" href="#">Разработано<img class="copyright-logo" src="img/htmlacademy.svg" width="35" height="35" alt="Логотип «HTML-Academy»"></a>
+        </div>
       </div>
     </footer>
     <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">

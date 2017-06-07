@@ -1,6 +1,8 @@
 .page-header {
 }
 .page-header__wrapper {
+  border-top: 1px solid @border-color;
+  border-bottom: 1px solid @border-color;
 }
 .page-header__title {
   font-size: 0;
@@ -8,4 +10,20 @@
 .page-header__wrapper {
   width: 320px;
   .margins;
+}
+@media @tablet-widths {
+  .page-header {
+  }
+  .page-header__wrapper {
+    width: 768px;
+    .margins;
+    border: none;
+  }
+}
+@media @desktop-widths {
+  .page-header {
+  }
+  .page-header__wrapper {
+    width: 1200px;
+  }
 }

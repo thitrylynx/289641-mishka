@@ -6,7 +6,9 @@
 }
 .promo-block__title {
   .zero;
-  .margins-30;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 30px;
   font-weight: 700;
   font-size: 22px;
 }
@@ -17,7 +19,7 @@
   font-weight: 700;
   font-size: 17px;
   text-transform: uppercase;
-  color: @primary-color;
+  color: @secondary-color;
 }
 .promo-block__descr {
   .zero;
@@ -52,4 +54,113 @@
   margin-top: 30px;
   margin-left: 30px;
   margin-right: 30px;
+}
+@media @tablet-widths {
+  .promo-block__wrapper {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .promo-block__title {
+    flex-basis: 550px;
+    .zero;
+    padding-top: 45px;
+    padding-left: 50px;
+    font-size: 43px;
+  }
+  .promo-block__subtitle {
+    flex-basis: 100px;
+    .zero;
+    padding-top: 55px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .promo-block__descr {
+    flex-basis: 300px;
+    height: 100px;
+    .zero;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .promo-block__features {
+    width: 290px;
+    order: 4;
+    .zero;
+    margin-top: -285px;
+    margin-left: 50px;
+  }
+  .promo-block__logo {
+    flex-basis: 335px;
+    height: 410px;
+    .zero;
+    margin-top: 55px;
+    margin-left: 35px;
+  }
+  .promo-block__price {
+    flex-basis: 130px;
+    align-self: center;
+    order: 4;
+    .zero;
+    margin-top: -210px;
+    margin-left: -220px;
+  }
+  .promo-block__btn {
+    flex-basis: 290px;
+    align-self: center;
+    order: 5;
+    .zero;
+    margin-top: -60px;
+    margin-left: -200px;
+  }
+}
+@media @desktop-widths {
+
+  .promo-block__wrapper {
+    width: 1200px;
+  }
+  .promo-block__title {
+    flex-basis: 700px;
+    .zero;
+    padding-top: 150px;
+    padding-left: 30px;
+    font-size: 60px;
+
+  }
+  .promo-block__subtitle {
+    flex-basis: 130px;
+    order: -1;
+    padding-top: 160px;
+    padding-left: 40px;
+    font-size: 20px;
+  }
+  .promo-block__descr {
+    flex-basis: 350px;
+    padding-left: 210px;
+    font-size: 18px;
+    line-height: 34px;
+
+  }
+  .promo-block__features {
+    width: 330px;
+    .zero;
+    margin-top: -360px;
+    margin-left: 210px;
+  }
+  .promo-block__logo {
+    flex-basis: 590px;
+    height: 700px;
+    margin-top: -125px;
+    z-index: -1;
+
+  }
+  .promo-block__price {
+
+  }
+  .promo-block__btn {
+    flex-basis: 320px;
+    margin-left: -240px;
+  }
 }

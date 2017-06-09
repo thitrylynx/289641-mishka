@@ -29,3 +29,29 @@
   border: none;
   border-bottom: 2px solid #000000;
 }
+@media @tablet-widths {
+  .form-name {
+    padding-top: 30px;
+    padding-left: 210px;
+    border: none;
+  }
+  .form-name__title {
+    margin-left: -190px;
+  }
+  .form-name__text {
+    display: flex;
+    align-items: center;
+  }
+  .form-name__text-value {
+    flex-grow: 1;
+    width: auto;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media @desktop-widths {
+  .form-name__text {
+    padding-right: 170px;
+  }
+}

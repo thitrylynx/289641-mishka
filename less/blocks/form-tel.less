@@ -29,3 +29,29 @@
   border: none;
   border-bottom: 2px solid #000000;
 }
+@media @tablet-widths {
+  .form-tel {
+    padding-top: 30px;
+    padding-left: 180px;
+    border: none;
+  }
+  .form-tel__title {
+    margin-left: -160px;
+  }
+  .form-tel__text {
+    display: flex;
+    align-items: center;
+  }
+  .form-tel__text-value {
+    flex-grow: 1;
+    width: auto;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media @desktop-widths {
+  .form-tel__text {
+    padding-right: 170px;
+  }
+}

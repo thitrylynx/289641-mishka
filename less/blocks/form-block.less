@@ -23,3 +23,38 @@
   margin-bottom: 55px;
   background-color: transparent;
 }
+@media @tablet-widths {
+  .form-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-block__title {
+    padding-top: 60px;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .form-block__note {
+    align-self: flex-end;
+    margin-top: 60px;
+  }
+  .form-block__btn {
+    margin-top: -30px;
+  }
+}
+@media @desktop-widths {
+  .form-block__title  {
+    padding-top: 160px;
+    padding-left: 230px;
+    padding-right: 230px;
+  }
+  .form-block__note {
+    align-self: flex-end;
+    margin-top: 60px;
+    padding-right: 165px;
+  }
+  .form-block__btn {
+    margin-left: 240px;
+    margin-top: -30px;
+  }
+}

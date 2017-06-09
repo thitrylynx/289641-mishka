@@ -35,3 +35,40 @@
   border: 2px solid #444444;
   cursor: pointer;
 }
+@media @tablet-widths {
+  .form-color {
+    padding-top: 30px;
+    padding-left: 180px;
+    border: none;
+  }
+  .form-color__title {
+    margin-left: -160px;
+  }
+  .form-color__feature {
+    display: inline-block;
+    width: 160px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+  .form-color__feature::before {
+    width: 40px;
+    height: 40px;
+  }
+  .form-color__feature-value {
+  }
+}
+@media @desktop-widths {
+  .form-color {
+    padding-left: 160px;
+  }
+  .form-color__title {
+    margin-left: -140px;
+  }
+  .form-color__feature {
+    width: 200px;
+    font-size: 19px;
+  }
+  .form-color__feature::before {
+    margin-top: -13px;
+  }
+}

@@ -35,3 +35,29 @@
   border-radius: 50px;
   cursor: pointer;
 }
+@media @tablet-widths {
+  .form-type {
+    padding-left: 180px;
+    border: none;
+  }
+  .form-type__title {
+    margin-left: -160px;
+  }
+  .form-type__feature {
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
+  .form-type__feature::before {
+    width: 40px;
+    height: 40px;
+    margin-top: -12px;
+  }
+}
+@media @desktop-widths {
+  .form-type {
+    padding-left: 160px;
+  }
+  .form-type__title {
+    margin-left: -140px;
+  }
+}

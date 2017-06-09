@@ -29,3 +29,29 @@
   border: none;
   border-bottom: 2px solid #000000;
 }
+@media @tablet-widths {
+  .form-mail {
+    display: flex;
+    padding-left: 180px;
+    border: none;
+  }
+  .form-mail__title {
+    margin-left: -160px;
+  }
+  .form-mail__text {
+    display: flex;
+    align-items: center;
+  }
+  .form-mail__text-value {
+    flex-grow: 1;
+    width: auto;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media @desktop-widths {
+  .form-mail__text {
+    padding-right: 170px;
+  }
+}

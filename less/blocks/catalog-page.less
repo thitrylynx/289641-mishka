@@ -15,5 +15,21 @@
 .catalog-page__wrapper {
   width: 320px;
   .margins;
-  margin-bottom: 55px;
+  padding-bottom: 70px; /* временная высота */
+}
+@media @tablet-widths {
+  .catalog-page__wrapper {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    align-items: stretch;
+    width: 768px;
+  }
+}
+@media @desktop-widths {
+  .catalog-page__wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1200px;
+  }
 }

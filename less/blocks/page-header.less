@@ -1,11 +1,30 @@
-.page-header {
-}
 .page-header__wrapper {
+  border-bottom: 1px solid @border-color;
 }
 .page-header__title {
-  font-size: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .page-header__wrapper {
   width: 320px;
   .margins;
+}
+@media @tablet-widths {
+  .page-header__wrapper {
+    width: 768px;
+    border: none;
+  }
+}
+@media @desktop-widths {
+  .page-header {
+  }
+  .page-header__wrapper {
+    width: 1150px;
+  }
 }

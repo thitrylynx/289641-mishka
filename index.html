@@ -5,6 +5,7 @@
     <title>Интернет магазин "Mishka"</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/outline.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -19,20 +20,23 @@
           <div class="main-nav__wrapper">
             <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
             <ul class="main-nav__list main-nav__list--open">
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Взание на заказ</a></li>
-              <li class="main-nav__item main__item--lens-icon"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-              <li class="main-nav__item main-nav__item--cart-icon"><a class="main-nav__link" href="#">Корзина пока пуста</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+              <li class="main-nav__item"><a class="main-nav__link main__link--lens-icon" href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--cart-icon" href="#">Корзина: пока пуста</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Новые поступления</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
+              <li class="main-nav__item"><a class="main-nav__link">Бесплатная доставка по России</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-    <!-- Блок виды товаров -->
+    <!-- Контент -->
     <section class="main-content">
       <div class="main-content__wrap">
-        <header class="main-content__header">
-          <h1 class="main-content__title">Милые штуки ручной работы для дома</h1>
+        <header class="main-content__header"> <!-- задать изображение -->
+          <h1 class="main-content__title">Милые штуки ручной<br>работы для дома</h1>
         </header>
       </div>
       <ul class="main-content__list">
@@ -48,12 +52,12 @@
         </li>
       </ul>
     </section>
-    <!-- Блок товар недели -->
+    <!-- Промо-блок -->
     <section class="promo-block">
       <div class="promo-block__wrapper">
-        <h1 class="promo-block__title">Вязанные корзинки</h1>
+        <h1 class="promo-block__title">Вязаные корзинки</h1>
         <span class="promo-block__subtitle">Товар недели</span>
-        <p class="promo-block__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех разверах.</p>
+        <p class="promo-block__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="promo-block__features">
           <tr class="promo-block__feature">
             <td class="promo-block__benefit">Цвет:</td>
@@ -73,32 +77,32 @@
         <a class="promo-block__btn btn" href="#">Заказать</a>
       </div>
     </section>
-    <!-- Блок о компании -->
+    <!-- О нас -->
     <section class="about">
       <div class="about__wrapper">
         <h1 class="about__title">Коротко о нас:</h1>
         <ul class="about__advantages">
           <li class="about__advantage about__advantage--flower">Экологически<br> чистые материалы</li>
           <li class="about__advantage about__advantage--money">Скандинавский стиль<br> по российской цене</li>
-          <li class="about__advantage about__advantage--heart">Увеличивет лайки<br> на фотографиях</li>
+          <li class="about__advantage about__advantage--heart">Увеличивает лайки<br> на фотографиях</li>
           <li class="about__advantage about__advantage--circle">Связано вручную с<br> любовью и умилением</li>
           <li class="about__advantage about__advantage--rocket">Поддержка отечественного<br> производителя</li>
           <li class="about__advantage about__advantage--present">Поставляется в<br> подарочной упаковке</li>
         </ul>
       </div>
     </section>
-    <!-- Блок отзывы -->
+    <!-- Отзывы -->
     <section class="reviews">
       <div class="reviews__wrapper">
         <h1 class="reviews__title">Отзывы</h1>
-          <div class="reviews__slider">
-            <div class="reviews__inner">
-              <blockquote class="reviews__item">
-                <p class="reviews__item-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                <cite class="reviews__author-name">Анастасия Красильникова</cite>
-                <div class="reviews__author-inst">@misssssiskras</div>
-              </blockquote>
-            </div>
+        <div class="reviews__slider">
+          <div class="reviews__inner">
+            <blockquote class="reviews__item">
+              <p class="reviews__item-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <cite class="reviews__author-name">Анастасия Красильникова</cite>
+              <div class="reviews__author-inst">@misssssiskras</div>
+            </blockquote>
+          </div>
         </div>
         <div class="arrow">
           <button class="reviews__btn-left arrow__block" type="button"></button>
@@ -107,7 +111,7 @@
         <a class="reviews__link btn" href="#">Написать</a>
       </div>
     </section>
-    <!-- Блок контакты -->
+    <!-- Подвал -->
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <h1 class="page-footer__title">Контакты</h1>
@@ -115,27 +119,33 @@
           <a class="page-footer__mail-value" href="#">info@mimimishkashop.ru</a>
         </p>
         <p class="page-footer__adress">адрес:
-          <span class="page-footer__adress-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          <span class="page-footer__adress-value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br>д. 19/8, офис 101</span>
         </p>
         <div class="page-footer__map-block">
           <img class="page-footer__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта - Город Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
         </div>
         <a class="page-footer__btn btn" href="#">Напишите нам</a>
       </div>
-      <!-- Блок социальные кнопки -->
-      <div class="socials-links">
-        <div class="socials-links__wrapper">
-          <a class="socials-link socials-link--inst" href="#">Мы в инстаграмме</a>
-          <a class="socials-link socials-link--fb" href="#">Мы в фейсбуке</a>
-          <a class="socials-link socials-link--twet" href="#">Мы в твиттере</a>
-        </div>
-      </div>
-      <div class="copyrights">
-        <div class="copyrights--wrapper">
-          <a class="copyright-link" href="#">Разработано<img class="copyright-logo" src="img/htmlacademy.svg" width="35" height="35" alt="Логотип «HTML-Academy»"></a>
+      <!-- Социальные кнопки -->
+      <div class="page-footer__socials">
+        <div class="page-footer__socials-wrapper">
+          <div class="page-footer__logo">
+            <a class="page-footer__logo-link" href="#"><img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»"></a>
+          </div>
+          <div class="socials-links">
+            <div class="socials-links__wrapper">
+              <a class="socials-link socials-link--inst" href="#">Мы в инстаграмме</a>
+              <a class="socials-link socials-link--fb" href="#">Мы в фейсбуке</a>
+              <a class="socials-link socials-link--twet" href="#">Мы в твиттере</a>
+            </div>
+          </div>
+          <div class="copyrights">
+            <a class="copyright-link" href="#">Разработано<img class="copyright-logo" src="img/htmlacademy.svg" width="35" height="35" alt="Логотип «HTML-Academy»"></a>
+          </div>
         </div>
       </div>
     </footer>
+    <!--
     <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
       <h1 class="modal-content__title">Добавить<br> в корзину</h1>
       <fieldset class="form-size">
@@ -153,5 +163,6 @@
       <button class="modal-content__btn btn" type="submit">Добавить</button>
     </form>
     <div class="modal-overlay"></div>
+-->
   </body>
 </html>

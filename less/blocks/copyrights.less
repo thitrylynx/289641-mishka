@@ -1,15 +1,11 @@
 .copyrights {
   height: 80px;
-  background-color: #f1f1f1;
-}
-.copyrights--wrapper {
-  width: 320px;
-  .margins;
+  background-color: transparent;
 }
 .copyright-link {
   display: block;
-  width: 260px;
-  margin-left: 30px;
+  width: 270px;
+  .margins;
   padding-top: 21px;
   padding-bottom: 21px;
   font-weight: 700;
@@ -19,14 +15,19 @@
   border-top: 1px solid @border-color;
 }
 .copyright-logo {
-  margin-left: 20px;
+  margin-left: 27px;
   vertical-align: middle;
 }
-<<<<<<< HEAD
 @media @tablet-widths {
   .copyright-link {
     border-top: none;
   }
+  .copyright-logo {
+    margin-left: 10px;
+  }
 }
-=======
->>>>>>> parent of 0a161b8... Исправление замечаний
+@media @desktop-widths {
+  .copyright-link {
+    width: 355px;
+  }
+}

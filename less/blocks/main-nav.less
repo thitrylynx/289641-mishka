@@ -1,84 +1,61 @@
-.main-nav {
-<<<<<<< HEAD
-=======
-  .width;
->>>>>>> parent of 0a161b8... Исправление замечаний
-}
-.main-nav__wrapper {
-  width: 320px;
-  .margins;
-}
 .main-nav__list {
-  display: none;
+  display: non;
   .zero;
   list-style: none;
 }
-.main-nav__list--open {
-}
 .main-nav__toggler {
+  position: absolute;
   display: block;
-<<<<<<< HEAD
   width: 25px;
   height: 25px;
-  margin-top: -45px;
-  margin-left: 265px;
-=======
-  width: 20px;
-  height: 15px;
->>>>>>> parent of 0a161b8... Исправление замечаний
+  margin-top: -47px;
+  margin-left: 269px;
   background: url(../img/icon-menu-open.svg) no-repeat;
   cursor: pointer;
 }
-.main-nav__toggler--close {
-}
 .main-nav__item {
   font-weight: 700;
+  font-size: 17px;
   border-top: 1px solid @border-color;
+}
+.main-nav__item:nth-child(5) {
+  display: none;
+}
+.main-nav__item:nth-child(6) {
+  display: none;
+}
+.main-nav__item:nth-child(7) {
+  display: none;
 }
 .main-nav__link {
   display: block;
-<<<<<<< HEAD
-  padding-top: 33px;
-  padding-bottom: 33px;
-=======
-  .paddings-height;
->>>>>>> parent of 0a161b8... Исправление замечаний
-  padding-left: 80px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  padding-left: 75px;
   .type-link;
 }
-.main__item--lens-icon::before {
+.main__link--lens-icon::before {
   content: " ";
   position: absolute;
-<<<<<<< HEAD
   margin-top: 0;
-  margin-left: -50px;
-=======
-  margin-top: 30px;
-  margin-left: 30px;
->>>>>>> parent of 0a161b8... Исправление замечаний
+  margin-left: -43px;
   width: 18px;
   height: 18px;
   background-image: url(../img/icon-search.svg);
   background-repeat: no-repeat;
   opacity: 0.1;
 }
-.main-nav__item--cart-icon::before {
+.main-nav__link--cart-icon::before {
   content: " ";
   position: absolute;
-<<<<<<< HEAD
   margin-top: 0;
-  margin-left: -50px;
-=======
-  margin-top: 30px;
-  margin-left: 30px;
->>>>>>> parent of 0a161b8... Исправление замечаний
+  margin-left: -43px;
   width: 20px;
   height: 22px;
   background-image: url(../img/icon-cart.svg);
   background-repeat: no-repeat;
   opacity: 0.1;
 }
-<<<<<<< HEAD
 @media @tablet-widths {
   .main-nav__wrapper {
     width: 768px;
@@ -93,6 +70,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    font-size: 15px;
     border: none;
   }
   .main-nav__item a  {
@@ -103,6 +81,7 @@
     flex-basis: 200px;
     order: 2;
     height: 60px;
+    padding-left: 27px;
   }
   .main-nav__item:nth-child(2) {
     flex-basis: 170px;
@@ -112,7 +91,7 @@
   .main-nav__item:nth-child(3) {
     order: 1;
     width: 85px;
-    height: 85px;
+    height: 88px;
     margin-left: auto;
     border-left: 1px solid @border-color;
     border-right: 1px solid @border-color;
@@ -124,18 +103,21 @@
   .main__link--lens-icon::before {
     margin-top: -7px;
     margin-left: -7px;
-}
+  }
+  .main-nav__link--cart-icon::before {
+    margin-left: -56px;
+  }    
   .main-nav__item:nth-child(4) {
     flex-basis: 313px;
     order: 1;
-    height: 85px;
+    height: 88px;
+    padding-left: 33px;
+    font-size: 17px;
     border-bottom: 1px solid @border-color;
   }
   .main-nav__item:nth-child(5) {
     display: flex;
     flex-basis: 370px;
-  }
-  .main-nav__item:nth-child(5) {
     font-size: 0;
     border-bottom: 1px solid @border-color;
   }
@@ -144,56 +126,67 @@
     flex-basis: 398px;
     order: 4;
     height: 60px;
-    padding-left: 50px;
+    padding-left: 65px;
     font-weight: normal;
   }
 }
 @media @desktop-widths {
   .main-nav__wrapper {
-    width: 1200px;
+    width: 1150px;
   }
   .main-nav__item:nth-child(1) {
+    flex-basis: 264px;
     order: -1;
-    height: 85px;
-    font-size: 19px;
+    height: 82px;
+    font-size: 16px;
+    padding-left: 60px;
     border-bottom: 1px solid @border-color;
   }
   .main-nav__item:nth-child(2) {
-    flex-basis: 595px;
+    flex-basis: 475px;
     order: -1;
     justify-content: flex-start;
-    height: 85px;
-    padding-left: 60px;
-    font-size: 19px;
+    height: 82px;
+    padding-left: 31px;
+    font-size: 16px;
     border-bottom: 1px solid @border-color;
   }
   .main-nav__item:nth-child(3) {
+    flex-basis: 77px;
     order: -1;
-    height: 85px;
+    height: 82px;
+    margin: 0;
   }
   .main-nav__item:nth-child(4) {
+    flex-basis: 290px;
     order: -1;
-    flex-basis: 320px;
-    padding-left:70px;
-    font-size: 19px;
+    height: 82px;
+    padding-left: 25px;
+    font-size: 16px;
+  }
+  .main-nav__link--cart-icon::before {
+    margin-left: -50px;
   }
   .main-nav__item:nth-child(5) {
     display: flex;
-    flex-basis: 210px;
-    font-size: 17px;
+    flex-basis: 264px;
+    height: 55px;
+    padding-left: 70px;
+    font-size: 14px;
     border: none;
   }
   .main-nav__item:nth-child(6) {
     display: flex;
-    flex-basis: 200px;
-    font-size: 17px;
+    flex-basis: 150px;
+    height: 55px;
+    font-size: 14px;
   }
   .main-nav__item:nth-child(7) {
-    flex-basis: 318px;
     display: flex;
+    flex-basis: 462px;
+    height: 55px;
     margin-left: auto;
-    font-size: 17px;
+    padding-right: 0;
+    font-size: 14px;
   }
 }
-=======
->>>>>>> parent of 0a161b8... Исправление замечаний

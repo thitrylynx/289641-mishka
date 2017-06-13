@@ -1,13 +1,11 @@
-.catalog-page {
-}
 .catalog-page__header {
-  height: 180px;
+  height: 170px;
   background-color: #f1f1f1;
   border-top: 1px solid @border-color;
 }
 .catalog-page__title {
   .zero;
-  padding-top: 75px;
+  padding-top: 70px;
   font-weight: 700;
   font-size: 27px;
   .align;
@@ -15,11 +13,20 @@
 .catalog-page__wrapper {
   width: 320px;
   .margins;
-<<<<<<< HEAD
-  padding-bottom: 70px; /* временная высота */
+  padding-bottom: 60px; /* временная высота */
 }
 @media @tablet-widths {
+  .catalog-page__header {
+    height: 225px;
+    margin-top: -60px;
+    z-index: -1;
+  }
+  .catalog-page__title {
+    padding-top: 95px;
+    font-size: 43px;
+  }
   .catalog-page__wrapper {
+    padding-bottom: 60px; /* временная высота */
     display: flex;
     flex-basis: auto;
     flex-direction: column;
@@ -28,12 +35,17 @@
   }
 }
 @media @desktop-widths {
+  .catalog-page__header {
+    height: 225px;
+    margin-top: -55px;
+  }
+  .catalog-page__title {
+    padding-top: 80px;
+    font-size: 48px;
+  }
   .catalog-page__wrapper {
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1200px;
+    width: 1150px;
   }
-=======
-  margin-bottom: 55px;
->>>>>>> parent of 0a161b8... Исправление замечаний
 }

@@ -1,24 +1,33 @@
 .copyrights {
   height: 80px;
-  background-color: #f1f1f1;
-}
-.copyrights--wrapper {
-  width: 320px;
-  .margins;
+  background-color: transparent;
 }
 .copyright-link {
   display: block;
-  width: 260px;
-  margin-left: 30px;
+  width: 270px;
+  .margins;
   padding-top: 21px;
   padding-bottom: 21px;
-  font-family: @bfont;
+  font-weight: 700;
   .type-link;
   font-size: 19px;
   text-align: center;
   border-top: 1px solid @border-color;
 }
 .copyright-logo {
-  margin-left: 20px;
+  margin-left: 27px;
   vertical-align: middle;
+}
+@media @tablet-widths {
+  .copyright-link {
+    border-top: none;
+  }
+  .copyright-logo {
+    margin-left: 10px;
+  }
+}
+@media @desktop-widths {
+  .copyright-link {
+    width: 355px;
+  }
 }

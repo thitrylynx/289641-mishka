@@ -9,15 +9,15 @@
 .form-mail__title {
   .zero;
   padding-right: 25px;
-  font-family: @bfont;
+  font-weight: 700;
   font-size: 17px;
   text-transform: uppercase;
   color: @primary-color;
 }
 .form-mail__text {
   display: block;
-  padding-top: 10px;
-  font-family: @bfont;
+  padding-top: 6px;
+  font-weight: 700;
   font-size: 17px;
   cursor: pointer;
 }
@@ -28,4 +28,42 @@
   padding-bottom: 15px;
   border: none;
   border-bottom: 2px solid #000000;
+}
+@media @tablet-widths {
+  .form-mail {
+    margin-top: 38px;
+    display: flex;
+    padding-left: 180px;
+    padding-bottom: 50px;
+    border: none;
+  }
+  .form-mail__title {
+    margin-left: -160px;
+    margin-bottom: -35px;
+  }
+  .form-mail__text {
+    display: flex;
+    align-items: center;
+  }
+  .form-mail__text-value {
+    flex-grow: 1;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: transparent;
+  }
+}
+@media @desktop-widths {
+  .form-mail {
+    margin-top: 30px;
+    padding-left: 215px;
+  }
+  .form-mail__title {
+    margin-left: -100px;
+  }
+  .form-mail__text {
+    padding-right: 200px;
+  }
 }

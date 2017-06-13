@@ -1,9 +1,20 @@
 .socials-links {
   height: 80px;
   font-size: 0;
-  background-color: #f1f1f1;
+  background-color: transparent;
 }
 .socials-links__wrapper {
   width: 320px;
   .margins;
+}
+@media @tablet-widths {
+  .socials-links__wrapper {
+    width: 270px;
+  }
+}
+@media @desktop-widths {
+  .socials-links__wrapper {
+    display: flex;
+    margin-left: 140px;
+  }
 }

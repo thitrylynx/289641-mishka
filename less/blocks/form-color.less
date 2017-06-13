@@ -9,16 +9,18 @@
 .form-color__title {
   .zero;
   padding-right: 25px;
-  font-family: @bfont;
+  font-weight: 700;
   font-size: 17px;
   text-transform: uppercase;
   color: @primary-color;
 }
 .form-color__feature {
   display: block;
-  margin-left: 60px;
+  margin-top: 4px;
+  margin-left: 62px;
   padding-top: 30px;
-  font-family: @bfont;
+  padding-bottom: 8px;
+  font-weight: 700;
   font-size: 17px;
   cursor: pointer;
 }
@@ -28,10 +30,52 @@
 .form-color__feature::before {
   content: " ";
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   margin-top: -8px;
-  margin-left: -55px;
+  margin-left: -60px;
   border: 2px solid #444444;
   cursor: pointer;
+}
+@media @tablet-widths {
+  .form-color {
+    margin-top: 65px;
+    padding-left: 190px;
+    padding-bottom: 50px;
+    border: none;
+  }
+  .form-color__title {
+    margin-left: -160px;
+    margin-bottom: -55px;
+  }
+  .form-color__feature {
+    display: inline-block;
+    width: 180px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    align-content: center;
+    font-size: 19px;
+  }
+  .form-color__feature::before {
+    width: 47px;
+    height: 47px;
+    margin-top: -15px;
+    margin-left: -80px;
+  }
+}
+@media @desktop-widths {
+  .form-color {
+    padding-left: 225px;
+  }
+  .form-color__title {
+    margin-left: -110px;
+  }
+  .form-color__feature {
+    width: 160px;
+    padding-bottom: 15px;
+    font-size: 17px;
+  }
+  .form-color__feature::before {
+    margin-top: -13px;
+  }
 }

@@ -1,6 +1,6 @@
 .form-tel {
   .zero;
-  margin-top: 30px;
+  margin-top: 26px;
   margin-left: 30px;
   margin-right: 30px;
   border: none;
@@ -9,15 +9,15 @@
 .form-tel__title {
   .zero;
   padding-right: 25px;
-  font-family: @bfont;
+  font-weight: 700;
   font-size: 17px;
   text-transform: uppercase;
   color: @primary-color;
 }
 .form-tel__text {
   display: block;
-  padding-top: 10px;
-  font-family: @bfont;
+  padding-top: 8px;
+  font-weight: 700;
   font-size: 17px;
   cursor: pointer;
 }
@@ -28,4 +28,41 @@
   padding-bottom: 15px;
   border: none;
   border-bottom: 2px solid #000000;
+}
+@media @tablet-widths {
+  .form-tel {
+    margin-top: 65px;
+    padding-left: 180px;
+    border: none;
+  }
+  .form-tel__title {
+    margin-left: -160px;
+    margin-bottom: -35px;
+  }
+  .form-tel__text {
+    display: flex;
+    align-items: center;
+  }
+  .form-tel__text-value {
+    flex-grow: 1;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: transparent;
+  }
+}
+@media @desktop-widths {
+  .form-tel {
+    margin-top: 60px;
+    padding-left: 215px;
+    border: none;
+  }
+  .form-tel__title {
+    margin-left: -100px;
+  }
+  .form-tel__text {
+    padding-right: 200px;
+  }
 }

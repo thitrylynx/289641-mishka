@@ -1,19 +1,51 @@
-.catalog-page {
-}
 .catalog-page__header {
-  height: 180px;
+  height: 170px;
   background-color: #f1f1f1;
   border-top: 1px solid @border-color;
 }
 .catalog-page__title {
   .zero;
-  padding-top: 75px;
-  font-family: @bfont;
+  padding-top: 70px;
+  font-weight: 700;
   font-size: 27px;
   .align;
 }
 .catalog-page__wrapper {
   width: 320px;
   .margins;
-  margin-bottom: 55px;
+  padding-bottom: 60px; /* временная высота */
+}
+@media @tablet-widths {
+  .catalog-page__header {
+    height: 225px;
+    margin-top: -60px;
+    z-index: -1;
+  }
+  .catalog-page__title {
+    padding-top: 95px;
+    font-size: 43px;
+  }
+  .catalog-page__wrapper {
+    padding-bottom: 60px; /* временная высота */
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    align-items: stretch;
+    width: 768px;
+  }
+}
+@media @desktop-widths {
+  .catalog-page__header {
+    height: 225px;
+    margin-top: -55px;
+  }
+  .catalog-page__title {
+    padding-top: 80px;
+    font-size: 48px;
+  }
+  .catalog-page__wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1150px;
+  }
 }

@@ -43,30 +43,34 @@
 .main-content__list-item--light {
   background-color: @primary-color;
 }
-.main-content__list-item--light::before {
-  content: " ";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  margin-top: -4px;
-  margin-left: 213px;
-  background-image: url(../img/icon-interior.svg);
-  background-repeat: no-repeat;
-  opacity: 0.2;
+.main-content__list-item--light {
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: -4px;
+    margin-left: 213px;
+    background-image: url(../img/icon-interior.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
 }
 .main-content__list-item--dark {
   background-color: @secondary-color;
 }
-.main-content__list-item--dark::before {
-  content: " ";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  margin-top: -6px;
-  margin-left: 204px;
-  background-image: url(../img/icon-toy.svg);
-  background-repeat: no-repeat;
-  opacity: 0.2;
+.main-content__list-item--dark {
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: -6px;
+    margin-left: 204px;
+    background-image: url(../img/icon-toy.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
 }
 @media @tablet-widths {
   .main-content {
@@ -96,13 +100,17 @@
     font-size: 20px;
     line-height: 27px;
   }
-  .main-content__list-item--light::before {
-    margin-top: 0;
-    margin-left: 224px;
+  .main-content__list-item--light {
+    &:before {
+      margin-top: 0;
+      margin-left: 224px;
+    }
   }
-  .main-content__list-item--dark::before {
-    margin-top: 0;
-    margin-left: 205px;
+.main-content__list-item--dark {
+    &:before {
+      margin-top: 0;
+      margin-left: 205px;
+    }
   }
 }
 @media @desktop-widths {
@@ -126,10 +134,14 @@
     height: 55px;
     font-size: 18px;
   }
-  .main-content__list-item--light::before {
-    margin-left: 380px;
+.main-content__list-item--light {
+    &:before {
+      margin-left: 380px;
+    }
   }
-  .main-content__list-item--dark::before {
-    margin-left: 361px;
+  .main-content__list-item--dark {
+    &:before {
+      margin-left: 361px;
+    }
   }
 }

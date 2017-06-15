@@ -1,4 +1,8 @@
 .page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  .margins;
   border-bottom: 1px solid @border-color;
 }
 .page-header__title {
@@ -11,10 +15,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.page-header__wrapper {
-  width: 320px;
-  .margins;
-}
 @media @tablet-widths {
   .page-header__wrapper {
     width: 768px;
@@ -22,8 +22,6 @@
   }
 }
 @media @desktop-widths {
-  .page-header {
-  }
   .page-header__wrapper {
     width: 1150px;
   }

@@ -25,17 +25,15 @@
 .form-type__feature-value {
   display: none;
 }
-.form-type__feature {
-  &:before {
-    content: " ";
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    margin-left: -58px;
-    border: 2px solid #444444;
-    border-radius: 50px;
-    cursor: pointer;
-  }
+.form-type__feature::before {
+  content: " ";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  margin-left: -58px;
+  border: 2px solid #444444;
+  border-radius: 50px;
+  cursor: pointer;
 }
 @media @tablet-widths {
   .form-type {
@@ -52,13 +50,11 @@
     padding-bottom: 70px;
     font-size: 19px;
   }
-  .form-type__feature {
-    &:before {
-      width: 46px;
-      height: 46px;
-      margin-top: -13px;
-      margin-left: -82px;
-    }
+  .form-type__feature::before {
+    width: 46px;
+    height: 46px;
+    margin-top: -13px;
+    margin-left: -82px;
   }
 }
 @media @desktop-widths {

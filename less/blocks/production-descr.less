@@ -8,28 +8,32 @@
   padding-left: 60px;
   font-size: 17px;
 }
-.production-descr__title--pic::before {
-  content: " ";
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  margin-top: 0px;
-  margin-left: -60px;
-  background-image: url(../img/icon-video.svg);
-  background-repeat: no-repeat;
+.production-descr__title--pic {
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+    margin-left: -60px;
+    background-image: url(../img/icon-video.svg);
+    background-repeat: no-repeat;
+  }
 }
 .production-descr__video {
   margin-top: 30px;
 }
-.production-descr__video--icon::before {
-  content: " ";
-  position: absolute;
-  width: 105px;
-  height: 80px;
-  margin-top: 65px;
-  margin-left: -182px;
-  background-image: url(../img/icon-play.svg);
-  background-repeat: no-repeat;
+.production-descr__video--icon {
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 105px;
+    height: 80px;
+    margin-top: 65px;
+    margin-left: -182px;
+    background-image: url(../img/icon-play.svg);
+    background-repeat: no-repeat;
+  }
 }
 .production-descr__inner {
   margin-top: 25px;
@@ -68,13 +72,17 @@
     height: 460px;
     .zero;
   }
-  .production-descr__title--pic::before {
-    margin-top: -5px;
-    margin-left: -67px;
+  .production-descr__title--pic {
+    &:before {
+      margin-top: -5px;
+      margin-left: -67px;
+    }
   }
-  .production-descr__video--icon::before {
-    margin-left: 280px;
-    margin-top: -300px;
+  .production-descr__video--icon {
+    &:before {
+      margin-left: 280px;
+      margin-top: -300px;
+    }
   }
   .production-descr__inner {
     .zero;
@@ -114,18 +122,22 @@
   .production-descr__title {
     font-size: 19px;
   }
-  .production-descr__title--pic::before {
-    margin-top: -50px;
-    margin-left: 5px;
+  .production-descr__title--pic {
+    &:before {
+      margin-top: -50px;
+      margin-left: 5px;
+    }
   }
   .production-descr__video {
     .zero;
     width: 630px;
     height: 415px;
   }
-  .production-descr__video--icon::before {
-    margin-left: -650px;
-    margin-top:  200px;
+  .production-descr__video--icon {
+    &:before {
+      margin-left: -650px;
+      margin-top:  200px;
+    }
   }
   .production-descr__inner {
     align-self: flex-start;

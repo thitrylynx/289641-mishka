@@ -40,25 +40,29 @@
   margin-left: 30px;
   margin-right: 30px;
 }
-.reviews__btn-left::before {
-  content: " ";
-  position: absolute;
-  width: 50px;
-  height: 35px;
-  margin-top: -13px;
-  margin-left: -27px;
-  background-image: url(../img/icon-left-arrow.svg);
-  background-repeat: no-repeat;
+.reviews__btn-left {
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    margin-top: -13px;
+    margin-left: -27px;
+    background-image: url(../img/icon-left-arrow.svg);
+    background-repeat: no-repeat;
+  }
 }
-.reviews__btn-right::before {
-  content: " ";
-  position: absolute;
-  width: 50px;
-  height: 35px;
-  margin-top: -13px;
-  margin-left: -26px;
-  background-image: url(../img/icon-right-arrow.svg);
-  background-repeat: no-repeat;
+.reviews__btn-right {
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    margin-top: -13px;
+    margin-left: -26px;
+    background-image: url(../img/icon-right-arrow.svg);
+    background-repeat: no-repeat;
+  }
 }
 @media @tablet-widths {
   .reviews__wrapper {

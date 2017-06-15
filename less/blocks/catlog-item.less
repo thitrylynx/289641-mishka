@@ -43,15 +43,17 @@
   font-size: 0;
   cursor: pointer;
 }
-.catlog-item__cart-pic::after {
-  content: " ";
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  margin-top: -18px;
-  margin-left: 115px;
-  background-image: url(../img/icon-cart.svg);
-  background-repeat: no-repeat;
+.catlog-item__cart-pic {
+  &:after {
+    content: " ";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-top: -18px;
+    margin-left: 115px;
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+  }
 }
 @media @tablet-widths {
   .catlog-item {

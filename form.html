@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>Интернет магазин "Mishka"</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/outline.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -17,12 +15,16 @@
         </a>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
-            <span class="main-nav__toggler main-nav__toggler--close"></span> <!-- бургер -->
-            <ul class="main-nav__list main-nav__list--open">
+            <button class="main-nav__toggler">Открыть меню</button> <!-- бургер -->
+            <ul class="main-nav__primary-list">
               <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
               <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
+            </ul>
+            <ul class="main-nav__secondary-list">
               <li class="main-nav__item"><a class="main-nav__link main__link--lens-icon" href="#">Поиск по сайту</a></li>
               <li class="main-nav__item"><a class="main-nav__link main-nav__link--cart-icon" href="#">Корзина: пока пуста</a></li>
+            </ul>
+            <ul class="main-nav__tertiary-list">
               <li class="main-nav__item"><a class="main-nav__link" href="#">Новые поступления</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
               <li class="main-nav__item"><a class="main-nav__link">Бесплатная доставка по России</a></li>

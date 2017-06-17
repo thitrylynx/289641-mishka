@@ -12,7 +12,11 @@
       <div class="page-header__wrapper">
         <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
         <a class="logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg"  alt="Интернет-магазин «Mishka»">
+          </picture>
         </a>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
@@ -42,7 +46,11 @@
       <div class="catalog-page__wrapper">
         <!-- Блок товара -->
         <article class="catlog-item">
-          <img class="catlog-item__img" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Изображение игрушки «зайчик-попрыгайчик»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="catlog-item__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Изображение игрушки «зайчик-попрыгайчик»">
+          </picture>
           <div class="catlog-item__descr-block">
             <h1 class="catlog-item__title"><a class="catlog-item__link" href="#">Зайчик-попрыгайчик</a></h1>
             <span class="catlog-item__descr">Рост 30 см, вес 200 г</span>
@@ -51,7 +59,11 @@
         </article>
         <!-- Блок товара -->
         <article class="catlog-item">
-          <img class="catlog-item__img" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Изображение «Корзинка для белья»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img class="catlog-item__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Изображение «Корзинка для белья»">
+          </picture>
           <div class="catlog-item__descr-block">
             <h1 class="catlog-item__title"><a class="catlog-item__link" href="#">Корзинка для белья</a></h1>
             <span class="catlog-item__descr">Диаметр 15 см, высота 10 см</span>
@@ -60,7 +72,11 @@
         </article>
         <!-- Блок товара -->
         <article class="catlog-item">
-          <img class="catlog-item__img" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Изображение «Большая корзинка для игрушек»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img class="catlog-item__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Изображение «Большая корзинка для игрушек»">
+          </picture>
           <div class="catlog-item__descr-block">
             <h1 class="catlog-item__title"><a class="catlog-item__link" href="#">Большая корзинка для игрушек</a></h1>
             <span class="catlog-item__descr">Диаметр 30 см, высота 30 см</span>
@@ -73,7 +89,12 @@
             <h1 class="production-descr__title production-descr__title--pic">Процесс производства</h1>
           </div>
           <!-- Блок видео -->
-          <img class="production-descr__video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео процесса производства"><a class="production-descr__video--icon" href="#"></a>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="production-descr__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео процесса производства">
+          </picture>
+          <a class="production-descr__video--icon" href="#"></a>
           <div class="production-descr__inner">
             <p class="production-descr__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a class="production-descr__btn btn">Сделать заказ</a>

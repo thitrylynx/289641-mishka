@@ -14,8 +14,8 @@
     position: absolute;
     width: 35px;
     height: 35px;
-    margin-top: 0px;
-    margin-left: -60px;
+    margin-top: 5px;
+    margin-left: -55px;
     background-image: url(../img/icon-video.svg);
     background-repeat: no-repeat;
   }
@@ -29,8 +29,8 @@
     position: absolute;
     width: 105px;
     height: 80px;
-    margin-top: 65px;
-    margin-left: -182px;
+    margin-top: -115px;
+    margin-left: 82px;
     background-image: url(../img/icon-play.svg);
     background-repeat: no-repeat;
   }
@@ -49,18 +49,19 @@
   color: @text-color;
 }
 .production-descr__btn {
-  margin-top: 23px;
+  margin-top: 27px;
   cursor: pointer;
 }
 @media @tablet-widths {
   .production-descr {
     display: flex;
     flex-direction: column;
-    padding-bottom: 50px; /* временная высота */
+    height: auto;
+    padding-bottom: 45px; /* временная высота */
   }
   .production-descr__header {
-    margin-top: 5px;
     margin-left: 107px;
+    order: 1;
   }
   .production-descr__title {
     .zero;
@@ -68,7 +69,7 @@
   }
   .production-descr__video {
     order: -1;
-    width: auto;
+    width: 100%;
     height: 460px;
     .zero;
   }
@@ -80,12 +81,13 @@
   }
   .production-descr__video--icon {
     &:before {
-      margin-left: 280px;
-      margin-top: -300px;
+      margin-left: 285px;
+      margin-top: -275px;
     }
   }
   .production-descr__inner {
     .zero;
+    order: 2;
   }
   .production-descr__text {
     .zero;
@@ -94,7 +96,7 @@
     padding-top: 35px;
     font-weight: normal;
     font-size: 15px;
-    line-height: 27px;
+    line-height: 28px;
   }
   .production-descr__btn {
     margin-top: 40px;
@@ -105,10 +107,10 @@
 @media @desktop-widths {
   .production-descr {
     flex-direction: row;
-    width: 960px;
-    height: auto;
-    margin-top: 45px;
-    margin-left: 95px;
+    width: 965px;
+    height: 415px;
+    margin-top: 50px;
+    margin-left: 90px;
     margin-bottom: 35px;
     padding: 0;
   }
@@ -117,7 +119,7 @@
     .zero;
     align-self: flex-start;
     margin-top: 90px;
-    margin-left: 65px;
+    margin-left: 70px;
   }
   .production-descr__title {
     font-size: 19px;
@@ -135,15 +137,16 @@
   }
   .production-descr__video--icon {
     &:before {
-      margin-left: -650px;
-      margin-top:  200px;
+      margin-left: -360px;
+      margin-top:  170px;
+      background-size: 90px;
     }
   }
   .production-descr__inner {
     align-self: flex-start;
     .zero;
     width: 300px;
-    margin-top: 130px;
+    margin-top: 125px;
     margin-left: -210px;
   }
   .production-descr__text {

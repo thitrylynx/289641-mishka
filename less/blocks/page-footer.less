@@ -1,11 +1,15 @@
 .page-footer__wrapper {
   width: 320px;
   .margins;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-size: auto 7px;
+  background-position: top;
+  background-repeat: repeat-x;
 }
 .page-footer__title {
   .zero;
   padding: 0 30px;
-  padding-top: 50px;
+  padding-top: 45px;
   font-weight: 700;
   font-size: 18px;
 }
@@ -33,7 +37,7 @@
   margin-left: 30px;
 }
 .page-footer__map-block {
-  margin-top: 37px;
+  margin-top: 40px;
 }
 .page-footer__map {
   width: auto;
@@ -60,14 +64,26 @@
     display: flex;
     flex-wrap: wrap;
     width: 768px;
+    background-size: auto 14px;
+    background-position: top;
     padding-bottom: 20px; /* временная высота */
   }
   .page-footer__title {
     width: 768px;
     .zero;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-left: 50px;
     font-size: 42px;
+    &:after {
+      content: " ";
+      position: absolute;
+      width: 60px;
+      height: 80px;
+      margin-top: -15px;
+      margin-left: 405px;
+      background-image: url(../img/icon-flag.svg);
+      background-repeat: no-repeat;
+    }
   }
   .page-footer__mail {
     width: 300px;
@@ -120,35 +136,53 @@
 }
 @media @desktop-widths {
   .page-footer__wrapper {
-    width: 1150px;
-    height: 460px;
+    width: 970px;
+    min-height: 500px;
     flex-direction: column;
-    padding-bottom: 75px; /* временная высота */
+    flex-wrap: nowrap;
+    padding-bottom: 100px; /* временная высота */
+    background-size: auto 21px;
   }
   .page-footer__title {
     width: 280px;
     .zero;
-    padding-top: 130px;
-    padding-left: 250px;
+    padding-top: 150px;
+    padding-left: 160px;
     font-size: 48px;
+    &:after {
+      display: none;
+    }
+    &:before {
+      content: " ";
+      position: absolute;
+      width: 60px;
+      height: 80px;
+      margin-top: -5px;
+      margin-left: -100px;
+      background-image: url(../img/icon-flag.svg);
+      background-repeat: no-repeat;
+    }
   }
   .page-footer__mail {
     .zero;
     padding-top: 50px;
-    padding-left: 250px;
+    padding-left: 160px;
     font-size: 16px;
   }
   .page-footer__adress {
-    width: 290px;
+    width: 295px;
+    min-height: 110px;
     .zero;
     padding-top: 32px;
-    margin-left: 250px;
+    margin-left: 160px;
   }
   .page-footer__mail-value {
     padding-bottom: 3px;
     border-bottom: 2px solid @border-color;
   }
   .page-footer__adress-value {
+    width: 230px;
+    min-height: 35px;
     margin-left: 22px;
     padding-top: 2px;
     font-size: 16px;
@@ -159,17 +193,16 @@
     width: 485px;
     height: 420px;
     .zero;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: 90px;
+    margin-top: -420px;
+    margin-left: 485px;
   }
   .page-footer__map {
     height: 420px;
   }
   .page-footer__btn {
     width: 210px;
-    margin-top: 75px;
-    margin-left: 250px;
+    margin-top: 40px;
+    margin-left: 160px;
     margin-bottom: 0;
     font-size: 16px;
   }

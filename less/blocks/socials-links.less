@@ -1,20 +1,24 @@
 .socials-links {
+  display: flex;
   height: 80px;
   font-size: 0;
   background-color: transparent;
 }
 .socials-links__wrapper {
-  width: 320px;
+  display: flex;
+  align-items: baseline;
   .margins;
 }
 @media @tablet-widths {
+  .socials-links {
+    margin-left: 110px;
+    margin-right: auto;
+  }
   .socials-links__wrapper {
-    width: 270px;
   }
 }
 @media @desktop-widths {
-  .socials-links__wrapper {
-    display: flex;
-    margin-left: 140px;
+  .socials-links {
+    margin-left: 265px;
   }
 }

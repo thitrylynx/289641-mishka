@@ -21,6 +21,12 @@
   font-size: 17px;
   cursor: pointer;
 }
+.form-mail__text-icon {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 225px;
+  cursor: default;
+}
 .form-mail__text-value {
   display: block;
   min-width: 260px;
@@ -45,13 +51,19 @@
     display: flex;
     align-items: center;
   }
+  .form-mail__text-icon {
+    margin-top: 0px;
+    margin-left: 455px;
+  }
   .form-mail__text-value {
     flex-grow: 1;
     width: auto;
     margin-left: 10px;
     margin-right: 20px;
     padding-top: 10px;
+    padding-left: 15px;
     padding-bottom: 15px;
+    font-size: 19px;
     background-color: transparent;
   }
 }
@@ -65,5 +77,8 @@
   }
   .form-mail__text {
     padding-right: 200px;
+  }
+  .form-mail__text-icon {
+    margin-left: 620px;
   }
 }

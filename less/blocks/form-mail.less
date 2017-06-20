@@ -35,6 +35,21 @@
   border: none;
   border-bottom: 2px solid #000000;
 }
+.form-mail__text-value:hover {
+  border-bottom: 2px solid #46c1ae;
+}
+.form-mail__text:hover .form-mail__text-icon {
+  fill: #46c1ae;
+}
+.form-mail__text-value:active {
+  border-bottom: 2px solid @primary-color;
+}
+.form-mail__text:active .form-mail__text-icon {
+  fill: @primary-color;
+}
+.form-mail__text-value::-webkit-input-placeholder {
+  opacity: 0.3;
+}
 @media @tablet-widths {
   .form-mail {
     margin-top: 38px;

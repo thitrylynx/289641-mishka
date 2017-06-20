@@ -11,21 +11,21 @@
 .production-descr__title-pic {
   position: absolute;
   margin-left: -55px;
+  fill: @primary-color;
 }
 .production-descr__video {
   margin-top: 30px;
 }
-.production-descr__video--icon {
-  &:before {
-    content: " ";
-    position: absolute;
-    width: 105px;
-    height: 80px;
-    margin-top: -115px;
-    margin-left: 80px;
-    background-image: url(../img/icon-play.svg);
-    background-repeat: no-repeat;
-  }
+.production-descr__video-icon {
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 80px;
+  fill: @primary-color;
+}
+.production-descr__video-icon:active {
+  height: 62px;
+  margin-top: -110px;
+  fill: #d0f1ea;
 }
 .production-descr__inner {
   margin-top: 23px;
@@ -51,6 +51,9 @@
     height: auto;
     padding-bottom: 45px; /* временная высота */
   }
+  .production-descr:hover {
+    box-shadow: 5px 5px 15px 1px @border-color;
+  }
   .production-descr__header {
     margin-left: 107px;
     order: 1;
@@ -60,7 +63,8 @@
     font-size: 20px;
   }
   .production-descr__title-pic {
-  margin-left: -65px;
+    margin-top: -5px;
+    margin-left: -65px;
   }
   .production-descr__video {
     order: -1;
@@ -68,17 +72,20 @@
     height: 460px;
     .zero;
   }
-  .production-descr__title--pic {
-    &:before {
-      margin-top: -5px;
-      margin-left: -67px;
-    }
+  .production-descr__video-icon {
+    margin-top: -280px;
+    margin-left: 280px;
   }
-  .production-descr__video--icon {
-    &:before {
-      margin-left: 285px;
-      margin-top: -275px;
-    }
+  .production-descr__video-icon:hover {
+    width: 120px;
+    height: 92px;
+    margin-top: -285px;
+    margin-left: 270px;
+  }
+  .production-descr__video-icon:active {
+    height: 62px;
+    margin-top: -270px;
+    margin-left: 270px;
   }
   .production-descr__inner {
     .zero;
@@ -94,7 +101,7 @@
     line-height: 28px;
   }
   .production-descr__btn {
-    margin-top: 40px;
+    margin-top: 35px;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -134,12 +141,17 @@
     width: 630px;
     height: 415px;
   }
-  .production-descr__video--icon {
-    &:before {
-      margin-left: -360px;
-      margin-top:  170px;
-      background-size: 90px;
-    }
+  .production-descr__video-icon {
+    margin-top: 170px;
+    margin-left: -365px;
+  }
+  .production-descr__video-icon:hover {
+    margin-top: 161px;
+    margin-left: -373px;
+  }
+  .production-descr__video-icon:active {
+    margin-top: 175px;
+    margin-left: -378px;
   }
   .production-descr__inner {
     align-self: flex-start;
@@ -153,6 +165,7 @@
     line-height: 28px;
   }
   .production-descr__btn {
+    margin-top: 40px;
     font-size: 16px;
   }
 }

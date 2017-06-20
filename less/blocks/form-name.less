@@ -16,7 +16,7 @@
 }
 .form-name__text {
   display: block;
-  padding-top: 25px;
+  padding-top: 23px;
   font-weight: 700;
   font-size: 17px;
   cursor: pointer;
@@ -26,8 +26,19 @@
   min-width: 260px;
   padding-top: 15px;
   padding-bottom: 15px;
+  color: @text-color;
   border: none;
   border-bottom: 2px solid #000000;
+}
+
+.form-name__text-value::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+.form-name__text-value:hover {
+  border-bottom: 2px solid #46c1ae;
+}
+.form-name__text-value:active {
+  border-bottom: 2px solid @primary-color;
 }
 @media @tablet-widths {
   .form-name {
@@ -42,6 +53,7 @@
   }
   .form-name__text {
     display: flex;
+    padding-top: 24px;
     margin-left: -20px;
     align-items: center;
     font-size: 19px;
@@ -49,15 +61,16 @@
   .form-name__text-value {
     flex-grow: 1;
     width: auto;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-right: 20px;
     padding-top: 10px;
+    padding-left: 20px;
     padding-bottom: 18px;
   }
 }
 @media @desktop-widths {
   .form-name {
-    margin-top: 55px;
+    margin-top: 60px;
     padding-left: 245px;
     padding-bottom: 45px;
   }
@@ -71,7 +84,7 @@
   .form-name__text-value {
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 12px;
+    padding-top: 13px;
     padding-bottom: 12px;
   }
 }

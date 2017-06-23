@@ -5,6 +5,7 @@
     <title>Интернет магазин "Mishka"</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/o.css" rel="stylesheet">
   </head>
   <body>
     <!-- SVG спрайт -->
@@ -104,12 +105,12 @@
           </picture>
         </a>
         <nav class="main-nav">
-          <div class="main-nav__wrapper">
+          <div class="main-nav__wrapper main-nav__wrapper--no-js">
             <button class="main-nav__toggler" type="button">
-              <svg class="main-nav__toggler-open" width="19.958px" height="14px">
+              <svg class="main-nav__toggler--open" width="19.958px" height="14px">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-open"></use>
               </svg>
-              <svg class="main-nav__toggler-close" width="20.514px" height="20.512px">
+              <svg class="main-nav__toggler--close" width="20.514px" height="20.512px">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-close">
                 </use>
               </svg>Открыть меню
@@ -263,11 +264,12 @@
           <svg class="page-footer__map-pin" width="66px" height="100.801px">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-map-pin"></use>
           </svg>
-          <picture>
+          <picture class="page-footer__map-image">
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="page-footer__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="457" alt="Карта - Город Санкт-Петербург, улица Большая Конюшенная, дом 19/8, офис 101">
           </picture>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6990308252625!2d30.32285799320328!3d59.937136156389435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1498069826805" width="100%" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <a class="page-footer__btn btn" href="#">Напишите нам</a>
       </div>
@@ -299,7 +301,7 @@
             </div>
           </div>
           <div class="copyrights">
-            <a class="copyright-link" href="#">Разработано
+            <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
               <svg class="copyright-logo" width="26.943px" height="34.09px">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
               </svg>
@@ -308,24 +310,20 @@
         </div>
       </div>
     </footer>
-
     <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
-      <h1 class="modal-content__title">Добавить<br> в корзину</h1>
+      <h1 class="modal-content__title">Добавить в корзину</h1>
       <fieldset class="form-size">
         <legend class="form-size__title">Выберите размер:</legend>
-        <label class="form-size__feature">
-          <input class="form-size__feature-value" type="radio" name="size" value="S" checked/>S
-        </label>
-        <label class="form-size__feature">
-          <input class="form-size__feature-value" type="radio" name="size" value="M"/>M
-        </label>
-        <label class="form-size__feature">
-          <input class="form-size__feature-value" type="radio" name="size" value="L"/>L
-        </label>
+        <input class="form-size__feature-value" id="size-s" type="radio" name="size" value="S" checked/>
+        <label class="form-size__feature" for="size-s">S</label>
+        <input class="form-size__feature-value" id="size-m" type="radio" name="size" value="M"/>
+        <label class="form-size__feature" for="size-m">M</label>
+        <input class="form-size__feature-value" id="size-l" type="radio" name="size" value="L"/>
+        <label class="form-size__feature" for="size-l">L</label>
       </fieldset>
       <button class="modal-content__btn btn" type="submit">Добавить</button>
     </form>
     <div class="modal-overlay"></div>
-
+    <script src="js/open-menu&madal.js"></script>
   </body>
 </html>

@@ -2,20 +2,19 @@
   display: flex;
   flex-direction: column;
 }
-.main-nav__primary-list {
-  display: flex;
-  flex-direction: column;
-  .zero;
-  list-style: none;
-}
+.main-nav__primary-list,
 .main-nav__secondary-list {
-  display: flex;
+  display: none;
   flex-direction: column;
   .zero;
   list-style: none;
 }
 .main-nav__tertiary-list {
   display: none;
+}
+.main-nav__wrapper--no-js .main-nav__primary-list, 
+.main-nav__wrapper--no-js .main-nav__secondary-list {
+  display: flex;
 }
 .main-nav__toggler {
   position: absolute;
@@ -26,15 +25,18 @@
   border: none;
   cursor: pointer;
 }
-.main-nav__toggler-open {
-
-}
-.main-nav__toggler-close {
+.main-nav__toggler--close, 
+.main-nav__toggler--open {
   display: none;
+}
+.main-nav__wrapper--close .main-nav__toggler--open,
+.main-nav__wrapper--open .main-nav__toggler--close {
+  display: block;
 }
 .main-nav__item {
   font-weight: 700;
   font-size: 17px;
+  background-color: #ffffff;
   border-top: 1px solid @border-color;
 }
 .main-nav__link {
@@ -66,11 +68,26 @@
 .main-nav__link[href]:active .main-nav__icon-cart {
   opacity: 0.3;
 }
+.main-nav__wrapper--open {
+  position: absolute;
+  width: 320px;
+}
+.main-nav__wrapper--open .main-nav__primary-list, 
+.main-nav__wrapper--open .main-nav__secondary-list  {
+  display: flex;
+}
 @media @tablet-widths {
   .main-nav__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     width: 768px;
+  }
+  .main-nav__wrapper--open {
+    position: static;
+  }
+  .main-nav__wrapper .main-nav__primary-list, 
+  .main-nav__wrapper .main-nav__secondary-list  {
+    display: flex;
   }
   .main-nav__item  {
     display: flex;
@@ -79,6 +96,7 @@
     height: 60px;
     box-sizing: border-box;
     font-size: 15px;
+    background-color: transparent;
     border: none;
   }
   .main-nav__primary-list {
@@ -133,7 +151,8 @@
     font-weight: normal;
     font-size: 15px;
   }
-  .main-nav__tertiary-list .main-nav__item:nth-child(1), .main-nav__tertiary-list .main-nav__item:nth-child(2) {
+  .main-nav__tertiary-list .main-nav__item:nth-child(1), 
+  .main-nav__tertiary-list .main-nav__item:nth-child(2) {
     display: none;
   }
   .main-nav__item a  {
@@ -204,5 +223,4 @@
     padding-right: 50px;
     font-size: 14px;
   }
-
 }

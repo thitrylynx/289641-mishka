@@ -21,10 +21,19 @@
   padding-top: 12px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 60px;
+  padding-bottom: 65px;
   font-size: 18px;
   border: none;
   border: 2px solid #000000;
+}
+.form-more__text:hover {
+  border: 2px solid #46c1ae;
+}
+.form-more__text:active {
+  border: 2px solid @primary-color;
+}
+.form-more__text::-webkit-input-placeholder {
+  opacity: 0.3;
 }
 @media @tablet-widths {
   .form-more {
@@ -40,12 +49,13 @@
   .form-more__text {
     width: 470px;
     margin-left: -25px;
+    padding-bottom: 60px;
     font-size: 20px;
   }
 }
 @media @desktop-widths {
   .form-more {
-    margin-top: 55px;
+    margin-top: 57px;
     padding-left: 250px;
   }
   .form-more__title {
